@@ -9,4 +9,12 @@ router.get('/', function(req, res, next) {
 router.get('/hashtag', function(req, res, next){
   res.render('hashtag');
 });
+
+router.get('/share', function(req, res){
+	res.render('share');
+});
+
+
+
+
 module.exports = router;
