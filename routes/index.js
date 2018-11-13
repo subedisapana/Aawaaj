@@ -13,7 +13,9 @@ router.get('/hashtag', function(req, res, next){
 router.get('/share', function(req, res){
 	res.render('share');
 });
-
+router.get('/resources', function(req, res, next){
+  res.render('resources');
+});
 
 
 
