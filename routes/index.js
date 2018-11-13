@@ -6,4 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/hashtag', function(req, res, next){
+  res.render('hashtag');
+});
 module.exports = router;
