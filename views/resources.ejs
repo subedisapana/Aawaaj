@@ -2,82 +2,131 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 
-
-
-
-</head>
-<body>
-  <style>
-    /* width */
 
   body {
       background : url('/images/img8.jpg');
       font-family: "Lato", sans-serif;
   }
 
-  .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: black;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-  }
 
-  .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: green;
-      display: block;
-      transition: 0.3s;
-  }
+   .navbar {
+       overflow: hidden;
+       background-color: #800000;
+       font-family: Arial, Helvetica, sans-serif;
+      }
 
-  .sidenav a:hover {
-      color: #f1f1f1;
-  }
+   .navbar a {
+       float: left;
+       font-size: 16px;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
 
-  .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-  }
+   .dropdown {
+       float: left;
+       overflow: hidden;
+   }
 
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px
-  }
-  /* width */
+   .dropdown .dropbtn {
+       font-size: 16px;
+       border: none;
+       outline: none;
+       color: white;
+       padding: 14px 16px;
+       background-color: inherit;
+       font-family: inherit;
+       margin: 0;
+   }
 
-  </style>
-  <div class="background-image"></div>
+   .navbar a:hover, .dropdown:hover .dropbtn {
+       background-color: #008000;
+   }
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+   .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: lightgrey;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+ }
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body background= "img8.png">
+
+<div class="navbar">
+<!--  <a href="#home">DIGITAL RESOURCES</a> -->
+<div class="dropdown">
+  <button class="dropbtn">DIGITAL RESOURCES
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="https://meta.wikimedia.org/wiki/Research:Online_harassment_resource_guide">RESOURCES GUIDE</a>
+  </div>
 </div>
 
-<span style="font-size:35px;cursor:pointer" onclick="openNav()"><font color="brown"> &#9776; RESOURCES</font></span>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+<!--  <a href="#news">LAWS</a> -->
+  <div class="dropdown">
+    <button class="dropbtn">LAWS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.ilo.org/ilc/ILCSessions/107/committees/violence-harassment/lang--en/index.htm">INTERNATIONAL LAWS</a>
+      <a href="http://www.pioneerlaw.com/">NATIONAL LAWS</a>
+    </div>
+  </div>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+
+  <div class="dropdown">
+    <button class="dropbtn">ORGANISATIONS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.ihollaback.org/">IHOLLABACK</a>
+      <a href="https://iheartmob.org/">HEARTMOB</a>
+      <a href="https://leanin.org">LEAN IN</a>
+      <a href="https://saathi.org.np/">SAATHI</a>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p>&copy;2018 Aawaaj All rights reserved</p>
+</div>
 
 </body>
 </html>
