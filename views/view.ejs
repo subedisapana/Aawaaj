@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>wlit</title>
+<style>
+	div{
+
+		width: 500px;
+    height: infinite;    
+    padding: 50px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+
+	}
+		
+		
+
+</style>
+</head>
+<body style="background: url(https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-08.jpg);">
+	
+	<div>
+	<h3> All shared experiences </h3>
+	<% exp.forEach(function(exps, i){ %>
+	
+		<p><strong><%= exps.Name %></strong></p>
+		<p><%= exps.experience %> </p>
+			
+ <%})%>
+ </div>
+
+	
+</body>
+</html>
+
