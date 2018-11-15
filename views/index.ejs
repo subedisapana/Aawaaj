@@ -1,51 +1,37 @@
-
 <html>
     <head>
         <title>Aawaaj</title>
-        <link rel='stylesheet' href='/stylesheets/index.css' type="text/css"/>
-        <script type="text/javascript">
-        	$(window).on('scroll',function(){
-        		if ($(window).scrollTop()){
-        			$('nav').addclass('black');
-        		}
-        		else{
-        			$('nav').removeclass('black');
-        		}
-
-        	})
-        </script>
-
+		<link rel='stylesheet' href='/stylesheets/index.css' type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet"/>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src = "javascripts/home.js" type="text/javascript"></script>
     </head>
-    
     	<header>
     		<nav>
     		<div class="main">
     			<div class="logo">
     			<ul>
-
-    				<li class="active"><a href="/">Home</a></li>
-    				<li><a href="#">About</a></li>
-    				<li><a href="/hashtag">Hashtags</a></li>
-    				<li><a href="/resources">Resources</a></li>
-    				<li><a href="/share">Share</a></li>
+    				<li><a href="/"><font color = "white">Home</font></a></li>
+    				<li><a href="#"><font color = "white">About</font></a></li>
+    				<li><a href="/hashtag"><font color = "white">Hashtags</font></a></li>
+    				<li><a href="/resources"><font color = "white">Resources</font></a></li>
+    				<li><a href="/share"><font color = "white">Share</font></a></li>
     			</ul>
-
     		</div>
     	</nav>
- 
-    		<div class="title">
-    			<h1><center>Movement Against Harassment</center></h1>
-    		
-    		</div>
+    	<div class="title">
+    		<h1><center>Movement Against Harassment</center></h1>
+    	</div>
     		<div class="button">
-    		
     		        <a href="#features"class="btn">FEATURES</a>
     				<a href="#glimpse"class="btn">GLIMPSE</a>
     		</div>
  </header>
+
  <body>
- 	<section>
-<div class="features" id="features" >
+	 <section class="s1"></section>
+ 	<section class="content">
+	<div class="features" id="features" >
 	<h1>Features</h1>
 
 	<span class="border"></span>
@@ -64,8 +50,6 @@
 		</p>
 	</div>
 
-
-
 	<div class="section" id="res">
 		<span class="name">Resources</span>
 		<span class="border"></span>
@@ -73,7 +57,6 @@
 			Resources contains self defense techniques and tips that help against harassment.
 		</p>
 	</div>
-
 
 	<div class="section" id="trending">
 		<span class="name">Trending</span>
@@ -83,8 +66,6 @@
 		</p>
 	</div>
  
-
-
     <div class="section" id="share">
 		<span class="name">Share</span>
 		<span class="border"></span>
@@ -95,16 +76,14 @@
 </div>
 </section>
 
-
-<section >
+<section class="content">
 <div class="GLIMPSE" id="glimpse">
 	<h1>GLIMPSE</h1>
 	<span class="border"></span>
 	<div class="ps">
 		<img src="/images/index1.jpg" width="480" height="400">
 		<img src="/images/fback.jpg" width="530" height="400">
-		<img src="/images/movement.jpg" width="480" height="400">
-	
+		<img src="/images/movement.jpg" width="480" height="400">	
     </div>
 </div>
 </section>
