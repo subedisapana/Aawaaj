@@ -150,17 +150,22 @@ nav.black{
 	text-transform: uppercase;
 }
 
-.border: {
+.border{
 	display: block;
 	margin-bottom: 30px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.Glimpse{
+
+.glimpse{
 	overflow: hidden;
 	text-align: center;
 }
+
+
+
+
 
 
 
@@ -335,7 +340,7 @@ nav.black{
 	}
 
 
-	
+
 
 /*scroll down to top*/
 }
