@@ -39,6 +39,7 @@ ul li.active a{
 	width: 120px;
 	height: 100px;
 	padding: 5px 10px;
+	position: top:30%, left: 50%;
 }
 .main{
 	max-width: 1200px;
