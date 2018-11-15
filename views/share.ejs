@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel='stylesheet' href='/stylesheets/nav.css' type="text/css"/>
 	<style>
 				#pop{
 					 height:280px;
@@ -24,11 +25,17 @@
 				h2{
 		          text-align: center;
 		          font-family:Comic Sans MS;
+		          position: absolute;
+				    left: 555px;
+				    top: 150px;
 		        }
 		    	h1{
 			      text-align: center;
 			      font-family:sans-serif; 
 			      font-size: 1.5em;
+			      position: absolute;
+				    left: 500px;
+				    top: 100px;
 		    	}
 		    	.blink{
 		    	      background-color: #004A7F;
@@ -78,24 +85,39 @@
     					margin-right: auto;
 
                     }
-
-                   
-
-
-
+                
 	</style>
                     
 </head>
 
+<header>
+        <nav>
+        <div class="main">
+          <div class="logo">
+          
+            
+          <ul>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/hashtag">Hashtags</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/share">Share</a></li>
+          </ul>
+
+    
+        </div>
+      </nav>
+      </div>
+
 <body style="background:url(https://images.yourstory.com/2017/02/shout_out.jpg?auto=compress); background-size: 100%;">
 	<font color="black" align="center"><h1>SHARE YOUR EXPERIENCES</h1>
   	<h2>you are not alone</h2></font><br/>
-	<button class="blink" style="position: absolute; left: 47%;" onclick="document.getElementById('pop').style.display='block';">Share</button>
+	<button class="blink" style="position: absolute; left: 45%; top: 30%;" onclick="document.getElementById('pop').style.display='block';">Share</button>
 	<div id="pop">
 	<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button><br>
-	<h4>Tell us your story. Have you gone through any kind of bad experience? If yes, then do share it.Don't hesitate.</h4>
+	<h4>Tell us your story. Have you gone through any kind of bad experience? If yes, then do share it.Don't hesitate.</h4><br/>
 	<form action="/share" method="post">
-		<input class="name" name="Name" placeholder="your full name"><br/>
+	<input class="name" name="Name" placeholder="your full name">
 	<textarea class="text" name="experience" placeholder="Share your experience here"></textarea>
 	<button class="post">Post</button></form>
 	</div>
