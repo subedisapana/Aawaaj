@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <title>Single Hash tag Screen</title>
+</head>
+
+<body style="background-color:powderblue;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tweet</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% tweets.forEach(function(tweet,i){ %>
+                        <tr>
+                            <th scope="row">
+                                <%= i %>
+                            </th>
+                            <td>
+                                <%= tweet.text %>
+                            </td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
