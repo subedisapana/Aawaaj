@@ -10,6 +10,21 @@ router.get('/', function(req, res, next) {
 router.get('/hashtag', function(req, res, next){
   res.render('hashtag');
 });
+router.get('/hashtag/:tag', function(req, res,next){
+    var Twit = require('twit');
+    var config = require('../config');
+    var T = new Twit(config);
+    var params = {
+      q: '#'+req.params['tag'].toString(),
+      count: 100
+    }
+    T.get('search/tweets',params,function (err, data, response){
+      var tweets = data.statuses ;
+      res.render('single_hashtag.ejs',{'tweets':tweets})
+    });
+
+});
+
 
 router.get('/share', function(req, res){
 	res.render('share');
