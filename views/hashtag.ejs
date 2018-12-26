@@ -4,23 +4,25 @@
         <title>Hashtag</title>
         <link rel='stylesheet' href='/stylesheets/hashtag.css' type="text/css"/>
         <link rel='stylesheet' href='/stylesheets/nav.css' type="text/css"/>
-    </head>
+    
+    <body>
+
     <header>
 
      <nav>
         <div class="main">
           <ul>
 
-            <li><a href="/">Home</a></li>
-            <li><a href="/hashtag">Hashtags</a></li>
-            <li><a href="/resources">Resources</a></li>
-            <li><a href="/share">Share</a></li>
+            <li class="active"><a href="/"><font color = "black">Home</a></li>
+            <li class="active"><a href="/hashtag"><font color = "black">Hashtags</a></li>
+            <li class="active"><a href="/resources"><font color = "black">Resources</a></li>
+            <li class="active"><a href="/share"><font color = "black">Share</a></li>
           </ul>
         </div>
      </nav>
- <body>
+ 
 
-        <div id = "sidebar">
+       <div id = "sidebar">
             <div class = "toggle-btn" onclick="togglesidebar()">
                 <span><br><br><h1>Hashtags</h1></span>
                 <span></span>
@@ -36,5 +38,7 @@
             </ul>
         </div>
         <script src="javascripts/hashtag.js"></script>
+
+
     </body>
 </html>
